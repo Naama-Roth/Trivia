@@ -1,0 +1,16 @@
+﻿  Communicator.cpp
+C:\Users\משתמש\Desktop\מגשימים\כיתה יא\c++\TriviaProject\trivia\Trivia\Trivia\Communicator.cpp(51,7): warning C4101: 'buffer': unreferenced local variable
+C:\Users\משתמש\Desktop\מגשימים\כיתה יא\c++\TriviaProject\trivia\Trivia\Trivia\Communicator.cpp(97,13): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\משתמש\Desktop\מגשימים\כיתה יא\c++\TriviaProject\trivia\Trivia\Trivia\Communicator.cpp(161,5): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  IRequestHandler.cpp
+  JsonResponsePacketSerializer.cpp
+C:\Users\משתמש\Desktop\מגשימים\כיתה יא\c++\TriviaProject\trivia\Trivia\Trivia\JsonResponsePacketSerializer.cpp(138,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  LoginRequestHandler.cpp
+  MenuRequestHandler.cpp
+  RequestHandlerFactory.cpp
+  RoomAdminRequestHandler.cpp
+  RoomMemberRequestHandler.cpp
+  Server.cpp
+  main.cpp
+  Generating Code...
+  Trivia.vcxproj -> C:\Users\משתמש\Desktop\מגשימים\כיתה יא\c++\TriviaProject\trivia\Trivia\x64\Debug\Trivia.exe
