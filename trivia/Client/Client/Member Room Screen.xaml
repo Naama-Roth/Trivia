@@ -1,0 +1,108 @@
+﻿<Window x:Class="Client.MemberRoomScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="Room_Screen" Height="470" Width="435" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="337*"/>
+            <ColumnDefinition Width="456*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border CornerRadius="10" BorderThickness="3" BorderBrush="Black" Grid.RowSpan="2">
+                <Border.Background>
+                    <SolidColorBrush Color="White"/>
+                </Border.Background>
+                <TextBlock HorizontalAlignment="Left" Height="18" Margin="7,388,0,0" TextWrapping="Wrap" Text="© Roni and Naama 2021" VerticalAlignment="Top" Width="170" Foreground="LimeGreen"/>
+            </Border>
+
+
+            <StackPanel VerticalAlignment="Center">
+                <Image Source="Image/Turtle.png"
+                       Width="90"/>
+                <TextBlock Text="Rooms:"
+                       FontWeight="Light"
+                       FontFamily="helvetica"
+                       FontSize="22"
+                       Foreground="LimeGreen"
+                       HorizontalAlignment="Center" Width="65"/>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button Name="LeaveRoom" Content="Leave Room" 
+                            HorizontalAlignment="Center" 
+                            Height="30" 
+                            VerticalAlignment="Top" 
+                            Width="80" 
+                            Click="LeaveRoom_Click">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Foreground" Value="LimeGreen"/>
+                                    <Setter Property="Background" Value="White"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Foreground" Value="White"/>
+                                            <Setter Property="Background" Value="LimeGreen"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                    </Button>
+
+                    <TextBlock Width="220"/>
+
+                    <Button Name="bRef" Content="Refresh"
+                            HorizontalAlignment="Center" 
+                            Height="30" VerticalAlignment="Top" 
+                            Width="80" 
+                            Click="startAsyncButton_Click">
+                            <Button.Style>
+                                <Style TargetType="{x:Type Button}">
+                                    <Setter Property="Foreground" Value="LimeGreen"/>
+                                    <Setter Property="Background" Value="White"/>
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type Button}">
+                                                <Border Background="{TemplateBinding Background}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Foreground" Value="White"/>
+                                            <Setter Property="Background" Value="LimeGreen"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+            
+
+            
+            <StackPanel Name="spRoomPlayers" Grid.Row="1" Orientation="Vertical">
+                
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+</Window>
